@@ -4,6 +4,7 @@ from django.contrib import admin
 
 app_name = 'myapp'
 urlpatterns = [
-    path('ajax', views.ajax),
-    path('more', views.more),
+    path('homework',views.homework),
+    path('index',views.index),
+    path('recommend',views.recommend),
 ]

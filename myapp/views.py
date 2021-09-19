@@ -1,14 +1,12 @@
+from django.shortcuts import render
 
-from django.views import generic
-from myapp.models import Movie, Director, Log
+# Create your views here.
+def homework(request):
+    return render(request, 'homework.html')
 
+def index(request):
+    return render(request, 'index.html') 
 
-class IndexView(generic.ListView):
-    template_name = 'myapp/index.html'
-    context_object_name = 'movie_list'
-    queryset = Movie.objects.all()
-
-
-class MovieDetailView(generic.DetailView):
-    model = Movie
-    template_name = 'myapp/detail.html'
+def recommend(request):
+    return render(request, 'recommend.html') 
+    
