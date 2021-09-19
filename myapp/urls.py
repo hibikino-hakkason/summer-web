@@ -1,8 +1,9 @@
 from django.urls import path
 from . import views
+from django.contrib import admin
 
 app_name = 'myapp'
 urlpatterns = [
-    path('', views.IndexView.as_view(), name='index'),
-    path('movie/<int:pk>/', views.MovieDetailView.as_view(), name='movie_detail'),
+    path('ajax', views.ajax),
+    path('more', views.more),
 ]
