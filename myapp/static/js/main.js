@@ -31,6 +31,7 @@ document.getElementById("home-no-botton").onclick = function() {
     num_page += 1;
     if (num_page === 2) {
         window.location.href = "homework";
+    
     };
 }
 
