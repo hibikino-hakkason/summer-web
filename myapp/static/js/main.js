@@ -33,7 +33,10 @@ document.getElementById("home-no-botton").onclick = function() {
         window.location.href = "homework";
     };
 };
+<<<<<<< HEAD:myapp/static/js/main.js
 
 // 宿題の提出日と内容が入力された後の動作
 let homework_deadline = document.getElementById("homework-deadline");
 let homework_content = document.getElementById("homework-content");
+=======
+>>>>>>> 87e74b2685077739cc12815453b9a074aabf6aee:templates/js/main.js

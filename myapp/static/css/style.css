@@ -12,6 +12,10 @@ img {
     max-width: 100%;
 }
 
+table {
+    margin: auto;
+}
+
 .page-title {
     font-size: 4rem;
 }
@@ -41,5 +45,9 @@ img {
 .home-content {
     text-align: center;
     padding:250px 20px;
+}
+
+.homework-content {
+    text-align: center;
 }
 
