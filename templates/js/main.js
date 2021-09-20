@@ -32,8 +32,3 @@ document.getElementById("home-no-botton").onclick = function() {
         window.location.href = "homework.html";
     };
 };
-
-// 宿題の提出日と内容が入力された後の動作
-let homework_deadline = document.getElementById("homework-deadline");
-let homework_content = document.getElementById("homework-content");
-
