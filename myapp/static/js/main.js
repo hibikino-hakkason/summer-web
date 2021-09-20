@@ -15,13 +15,14 @@ document.getElementById("home-main-botton").onclick = function() {
     document.getElementById("home-main-botton").style.display="none";
     document.getElementById("home-yes-botton").style.display="";
     document.getElementById("home-no-botton").style.display="";
-  };
+};
 
 // (Yes)ボタンが押された時の動作
 document.getElementById("home-yes-botton").onclick = function() {
     num_page += 1;
     if (num_page === 2) {
-        window.location.href = "recommend.html";
+        window.location.href = "recommend";
+        
     };
 };
 
@@ -29,7 +30,7 @@ document.getElementById("home-yes-botton").onclick = function() {
 document.getElementById("home-no-botton").onclick = function() {
     num_page += 1;
     if (num_page === 2) {
-        window.location.href = "homework.html";
+        window.location.href = "homework";
     };
 };
 
