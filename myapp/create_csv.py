@@ -7,7 +7,12 @@ def get_movie(genres):
 
     result_df = df.copy()
     for genre in genres:
+        df_ = result_df.copy()
         result_df = result_df[result_df["Genres"].str.contains(genre)]
+        if len(result_df) < 3:
+            result_df = df_.copy()
+            break
+
     result_df = result_df.sort_values("Score", ascending=False)
     result_df = result_df[["Name", "Image_url", "Score"]].reset_index(drop=True)
     if len(result_df) > 3:
