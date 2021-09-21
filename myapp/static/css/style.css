@@ -8,10 +8,6 @@ a {
     text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-}
-
 table {
     margin: auto;
 }
@@ -51,3 +47,6 @@ table {
     text-align: center;
 }
 
+.fact-content {
+    text-align: center;
+}
