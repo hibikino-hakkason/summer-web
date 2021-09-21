@@ -12,7 +12,7 @@
 
     <body>
         <div class="container">
-            <h2>あなたにお勧めな作品は何だろう</h2>
+            <h2>あなたが観るべき夏のアニメは何かな？</h2>
                 <label>好きなジャンルを最低１つは選んでください(複数可能です)</label>               
                 <form id="target" method="post">{% csrf_token %}
                     <input type="checkbox" id="mistery" name="movie" value="ミステリー" />
@@ -110,8 +110,9 @@
 
                     <input type="checkbox" id="BL" name="movie" value="ボーイズラブ" />
                     <label for="BL">ボーイズラブ</label>
-
-                <input type="submit" id="button" name="button" value="テスト">
+                <br>
+                <input type="submit" id="button" name="button" value="診断">
+                </br>
               </form>
         </div>
         <script>
