@@ -3,6 +3,7 @@
 let num_page = 1;
 document.getElementById("home-yes-botton").style.display="none";
 document.getElementById("home-no-botton").style.display="none";
+document.getElementById("home-sindan-botton").style.display="none";
 
 // 最初の画面に戻った時の動作
 if (document.getElementById("home-title").innerHTML === "夏休みにやるべきことは終わった？") {
@@ -15,14 +16,15 @@ document.getElementById("home-main-botton").onclick = function() {
     document.getElementById("home-main-botton").style.display="none";
     document.getElementById("home-yes-botton").style.display="";
     document.getElementById("home-no-botton").style.display="";
+    document.getElementById("home-sindan-botton").style.display="";
+    
 };
 
 // (Yes)ボタンが押された時の動作
 document.getElementById("home-yes-botton").onclick = function() {
     num_page += 1;
     if (num_page === 2) {
-        window.location.href = "recommend";
-        
+        window.location.href = "recommend";      
     };
 };
 

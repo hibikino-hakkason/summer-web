@@ -2,11 +2,13 @@
 
 // 初期状態
 document.getElementById("homework-table").style.display="none";
+document.getElementById("homework-message").style.display="none";
 
 let homeworks = [];
 // 宿題の提出日と内容が入力された後の動作
 document.getElementById("check-botton").onclick = function() {
     document.getElementById("homework-table").style.display="";
+    document.getElementById("homework-message").style.display="";
     var homework_deadline = document.getElementById("homework-deadline");
     var homework_content = document.getElementById("homework-content");
     var table = document.getElementById("homework-table");
