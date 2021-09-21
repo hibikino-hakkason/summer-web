@@ -1,7 +1,7 @@
 {% load static %} 
 <!DOCTYPE html>
 <html lang="ja">
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <head>    
         
         <meta charset="utf-8">
@@ -14,8 +14,126 @@
         <div class="container">
             <h2>あなたにお勧めな作品は何だろう</h2>
               <form action="hoge">
-                <label>好きなワードを入力してください: <input type="text", name="homework" id="homework-content"></label>               
+                <div>
+                <label>好きなジャンルを最低１つは選んでください(複数可能です)</label>               
+                <form id="target">
+                  <p>
+                    <input type="checkbox" id="mistery" name="movie" value="mistery" />
+                    <label for="mistery">ミステリー</label>
+
+                    <input type="checkbox" id="action" name="movie" value="action" />
+                    <label for="action">アクション</label>
+
+                    <input type="checkbox" id="police" name="movie" value="police"  />
+                    <label for="police">警察</label>
+
+                    <input type="checkbox" id="ability" name="movie" value="ability" />
+                    <label for="ability">超能力</label>
+
+                    <input type="checkbox" id="mahou" name="movie" value="mahou" />
+                    <label for="mahou">魔法</label>
+
+                    <input type="checkbox" id="dorama" name="movie" value="dorama" />
+                    <label for="dorama">ドラマ</label>
+
+                    <input type="checkbox" id="haremu" name="movie" value="haremu" />
+                    <label for="haremu">ハーレム</label>
+
+                    <input type="checkbox" id="romance" name="movie" value="romance" />
+                    <label for="romance">ロマンス</label>
+
+                    <input type="checkbox" id="SF" name="movie" value="SF" />
+                    <label for="SF">SF</label>
+
+                    <input type="checkbox" id="comedy" name="movie" value="comedy" />
+                    <label for="comedy">コメディ</label>
+
+                    <input type="checkbox" id="etti" name="movie" value="etti" />
+                    <label for="etti">エッチ</label>
+
+                    <input type="checkbox" id="boy" name="movie" value="boy" />
+                    <label for="boy">少年</label>
+
+                    <input type="checkbox" id="magic" name="movie" value="magic" />
+                    <label for="magic">魔法</label>
+
+                    <input type="checkbox" id="robot" name="movie" value="robot" />
+                    <label for="robot">ロボット</label>
+
+                    <input type="checkbox" id="gunzi" name="movie" value="gunzi" />
+                    <label for="gunzi">軍事</label>
+
+                    <input type="checkbox" id="everyday" name="movie" value="everyday" />
+                    <label for="everyday">日常</label>
+
+                    <input type="checkbox" id="girl" name="movie" value="girl" />
+                    <label for="girl">少女</label>
+
+                    <input type="checkbox" id="adobentya" name="movie" value="adobentya" />
+                    <label for="adobentya">アドベンチャー</label>
+
+                    <input type="checkbox" id="hora" name="movie" value="hora"  />
+                    <label for="hora">ホラー</label>
+
+                    <input type="checkbox" id="samurai" name="movie" value="samurai" />
+                    <label for="samurai">サムライ</label>
+
+                    <input type="checkbox" id="sinri" name="movie" value="sinri" />
+                    <label for="sinri">心理戦</label>
+
+                    <input type="checkbox" id="propa" name="movie" value="propa" />
+                    <label for="propa">パロディ</label>
+                    
+                    <input type="checkbox" id="sports" name="movie" value="sports"  />
+                    <label for="sports">スポーツ</label>
+
+                    <input type="checkbox" id="blood" name="movie" value="blood" />
+                    <label for="blood">吸血鬼</label>
+
+                    <input type="checkbox" id="utyu" name="movie" value="utyu" />
+                    <label for="utyu">宇宙</label>
+
+                    <input type="checkbox" id="man" name="movie" value="man" />
+                    <label for="man">青年</label>
+
+                    <input type="checkbox" id="woman" name="movie" value="woman"  />
+                    <label for="woman">女性</label>
+
+                    <input type="checkbox" id="music" name="movie" value="music" />
+                    <label for="music">音楽</label>
+
+                    <input type="checkbox" id="surira" name="movie" value="surira" />
+                    <label for="surira">スリラー</label>
+
+                    <input type="checkbox" id="game" name="movie" value="game" />
+                    <label for="game">ゲーム</label>
+
+                    <input type="checkbox" id="debiru" name="movie" value="debiru"  />
+                    <label for="debiru">悪魔</label>
+
+                    <input type="checkbox" id="BL" name="movie" value="BL" />
+                    <label for="BL">ボーイズラブ</label>
+
+                  </p>
+                </div>
               </form>
-            </div>
+              <div>
+                <button type="button" id="btn">診断</button>
+        </div>
+
+        </div>
+        <script>
+    
+        $(function () {
+          
+          $('#btn').click(function() {
+            $('[name="movie"]:checked').each(function(index, elm) {
+              var osValue = $(elm).attr('id');
+              var osText = $('label[for="' + osValue + '"]').text();
+              console.log(osText);  
+            });
+          })
+        });
+        </script>
     </body>
 </html>
