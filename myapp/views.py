@@ -9,4 +9,7 @@ def index(request):
 
 def recommend(request):
     return render(request, 'recommend.html') 
+
+def fact(request):
+    return render(request, 'fact.html') 
     
