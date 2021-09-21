@@ -13,125 +13,117 @@
     <body>
         <div class="container">
             <h2>あなたにお勧めな作品は何だろう</h2>
-              <form action="hoge">
-                <div>
                 <label>好きなジャンルを最低１つは選んでください(複数可能です)</label>               
-                <form id="target">
-                  <p>
-                    <input type="checkbox" id="mistery" name="movie" value="mistery" />
+                <form id="target" method="post">{% csrf_token %}
+                    <input type="checkbox" id="mistery" name="movie" value="ミステリー" />
                     <label for="mistery">ミステリー</label>
 
-                    <input type="checkbox" id="action" name="movie" value="action" />
+                    <input type="checkbox" id="action" name="movie" value="アクション" />
                     <label for="action">アクション</label>
 
-                    <input type="checkbox" id="police" name="movie" value="police"  />
+                    <input type="checkbox" id="police" name="movie" value="警察"  />
                     <label for="police">警察</label>
 
-                    <input type="checkbox" id="ability" name="movie" value="ability" />
+                    <input type="checkbox" id="ability" name="movie" value="超能力" />
                     <label for="ability">超能力</label>
 
-                    <input type="checkbox" id="mahou" name="movie" value="mahou" />
+                    <input type="checkbox" id="mahou" name="movie" value="魔法" />
                     <label for="mahou">魔法</label>
 
-                    <input type="checkbox" id="dorama" name="movie" value="dorama" />
+                    <input type="checkbox" id="dorama" name="movie" value="ドラマ" />
                     <label for="dorama">ドラマ</label>
 
-                    <input type="checkbox" id="haremu" name="movie" value="haremu" />
+                    <input type="checkbox" id="haremu" name="movie" value="ハーレム" />
                     <label for="haremu">ハーレム</label>
 
-                    <input type="checkbox" id="romance" name="movie" value="romance" />
+                    <input type="checkbox" id="romance" name="movie" value="ロマンス" />
                     <label for="romance">ロマンス</label>
 
                     <input type="checkbox" id="SF" name="movie" value="SF" />
                     <label for="SF">SF</label>
 
-                    <input type="checkbox" id="comedy" name="movie" value="comedy" />
+                    <input type="checkbox" id="comedy" name="movie" value="コメディ" />
                     <label for="comedy">コメディ</label>
 
-                    <input type="checkbox" id="etti" name="movie" value="etti" />
+                    <input type="checkbox" id="etti" name="movie" value="エッチ" />
                     <label for="etti">エッチ</label>
 
-                    <input type="checkbox" id="boy" name="movie" value="boy" />
+                    <input type="checkbox" id="boy" name="movie" value="少年" />
                     <label for="boy">少年</label>
 
-                    <input type="checkbox" id="magic" name="movie" value="magic" />
-                    <label for="magic">魔法</label>
+                    <input type="checkbox" id="kakuto" name="movie" value="格闘" />
+                    <label for="kakuto">格闘</label>
 
-                    <input type="checkbox" id="robot" name="movie" value="robot" />
+                    <input type="checkbox" id="robot" name="movie" value="ロボット" />
                     <label for="robot">ロボット</label>
 
-                    <input type="checkbox" id="gunzi" name="movie" value="gunzi" />
+                    <input type="checkbox" id="gunzi" name="movie" value="軍事" />
                     <label for="gunzi">軍事</label>
 
-                    <input type="checkbox" id="everyday" name="movie" value="everyday" />
+                    <input type="checkbox" id="everyday" name="movie" value="日常" />
                     <label for="everyday">日常</label>
 
-                    <input type="checkbox" id="girl" name="movie" value="girl" />
+                    <input type="checkbox" id="girl" name="movie" value="少女" />
                     <label for="girl">少女</label>
 
-                    <input type="checkbox" id="adobentya" name="movie" value="adobentya" />
+                    <input type="checkbox" id="adobentya" name="movie" value="アドベンチャー" />
                     <label for="adobentya">アドベンチャー</label>
 
-                    <input type="checkbox" id="hora" name="movie" value="hora"  />
+                    <input type="checkbox" id="hora" name="movie" value="ホラー"  />
                     <label for="hora">ホラー</label>
 
-                    <input type="checkbox" id="samurai" name="movie" value="samurai" />
+                    <input type="checkbox" id="samurai" name="movie" value="サムライ" />
                     <label for="samurai">サムライ</label>
 
-                    <input type="checkbox" id="sinri" name="movie" value="sinri" />
+                    <input type="checkbox" id="sinri" name="movie" value="心理戦" />
                     <label for="sinri">心理戦</label>
 
-                    <input type="checkbox" id="propa" name="movie" value="propa" />
+                    <input type="checkbox" id="propa" name="movie" value="パロディ" />
                     <label for="propa">パロディ</label>
                     
-                    <input type="checkbox" id="sports" name="movie" value="sports"  />
+                    <input type="checkbox" id="sports" name="movie" value="スポーツ"  />
                     <label for="sports">スポーツ</label>
 
-                    <input type="checkbox" id="blood" name="movie" value="blood" />
+                    <input type="checkbox" id="blood" name="movie" value="吸血鬼" />
                     <label for="blood">吸血鬼</label>
 
-                    <input type="checkbox" id="utyu" name="movie" value="utyu" />
+                    <input type="checkbox" id="utyu" name="movie" value="宇宙" />
                     <label for="utyu">宇宙</label>
 
-                    <input type="checkbox" id="man" name="movie" value="man" />
+                    <input type="checkbox" id="man" name="movie" value="青年" />
                     <label for="man">青年</label>
 
-                    <input type="checkbox" id="woman" name="movie" value="woman"  />
+                    <input type="checkbox" id="woman" name="movie" value="女性"  />
                     <label for="woman">女性</label>
 
-                    <input type="checkbox" id="music" name="movie" value="music" />
+                    <input type="checkbox" id="music" name="movie" value="音楽" />
                     <label for="music">音楽</label>
 
-                    <input type="checkbox" id="surira" name="movie" value="surira" />
+                    <input type="checkbox" id="surira" name="movie" value="スリラー" />
                     <label for="surira">スリラー</label>
 
-                    <input type="checkbox" id="game" name="movie" value="game" />
+                    <input type="checkbox" id="game" name="movie" value="ゲーム" />
                     <label for="game">ゲーム</label>
 
-                    <input type="checkbox" id="debiru" name="movie" value="debiru"  />
+                    <input type="checkbox" id="debiru" name="movie" value="悪魔"  />
                     <label for="debiru">悪魔</label>
 
-                    <input type="checkbox" id="BL" name="movie" value="BL" />
+                    <input type="checkbox" id="BL" name="movie" value="ボーイズラブ" />
                     <label for="BL">ボーイズラブ</label>
 
-                  </p>
-                </div>
+                <input type="submit" id="button" name="button" value="テスト">
               </form>
-              <div>
-                <button type="button" id="btn">診断</button>
-        </div>
-
         </div>
         <script>
-    
-        $(function () {
-          
+        $(function () {          
           $('#btn').click(function() {
             $('[name="movie"]:checked').each(function(index, elm) {
               var osValue = $(elm).attr('id');
               var osText = $('label[for="' + osValue + '"]').text();
               console.log(osText);  
+
             });
+
             window.location.href = "fact";  
           })
         });
