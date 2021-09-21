@@ -7,4 +7,5 @@ urlpatterns = [
     path('homework',views.homework),
     path('index',views.index),
     path('recommend',views.recommend),
+    path('fact',views.fact),
 ]

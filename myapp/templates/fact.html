@@ -1,10 +1,11 @@
+{% load static %} 
 <!DOCTYPE html>
 <html lang="ja">
     <head>    
         <meta charset="utf-8">
         <title>夏休み最終日のTODO</title>
         <meta name="description" content="夏休み中にやるべきことが終わったかを確認するアプリです">
-        <link href="css/style.css", rel="stylesheet">
+        <link href="{%  static 'css/style.css' %}", rel="stylesheet">
     </head>
 
     <body class="fact-content">
@@ -21,6 +22,7 @@
             <img src="https://msp.c.yimg.jp/images/v2/FUTi93tXq405grZVGgDqG1CROubRnqp0a8lc9vDDS-lAY7AB0-ZjPxi7Xye_xu0wm9U4TgWke3wHS2oRWPNFsjvD2JXl_7C2xRnagW_n5WiaRZ-uNfZY_YGCowVQyfCdzyUFX3tJ_2FbORSufDRAFqFwLUoBlfpck-lOmldj_8YM_QD1P-o7YPgFUjfn8uOxTNj65nTiqkoOg-YjLhO6crWPMN52LnSynlh5eD7BZ1f6aoBGeUDN0SyiO7a5crD36f7BdqzTEOcD-B5nVQk6ihTQQbzQ0p4caWkyaSELo94=/71qN-0yKXdL._RI_.jpg">
             <p>写真３のタイトル</p>
         </div>
-        <script src="js/homework_result.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="{%static 'js/fact.js' %}"></script>
     </body>
 </html>
