@@ -8,14 +8,15 @@ def homework(request):
 def index(request):
     return render(request, 'index.html') 
 
+#映画ジャンルを受け取る
 def recommend(request):
     result = request.POST.getlist("movie")
-    print(result)
+    #print(result)
     if request.method == "POST":
         # recommend.py呼びだす
-        create_csv.get_movie(result)
-
-        return redirect('/jquery/fact')
+        movies = create_csv.get_movie(result)
+            
+        return render(request, 'fact.html', { "movies": movies })
     return render(request, 'recommend.html') 
 
 def fact(request):
